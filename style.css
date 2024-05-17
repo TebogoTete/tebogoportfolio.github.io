@@ -10,7 +10,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(Images/Untitled\ design2.png);
+    background-image: url(Images/Untitled\ design.png);
     background-size: cover;
     background-position: center;
 }
@@ -234,4 +234,49 @@ nav ul li a:hover::after{
 }
 .work:hover .layer{
     height: 100%;
+}
+/*---------------------------Contact-------------------------*/
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #205cd4;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #205cd4;
+    transform: translateY(-5px);
+}
+.btn{
+    display: inline-block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #205cd4;
+    padding: 15px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #205cd4;
 }
