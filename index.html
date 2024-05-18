@@ -12,13 +12,15 @@
         <div class="container">
             <nav>
                 <img src="Images/Tebogo 2.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Digital Marketer</p>
@@ -74,8 +76,8 @@
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>I specialize in crafting stunning websites that not only look great but also drive results. By creating custom designs that reflect your brand identity and engage your target audience.</p>
+                    <h2>Web Dev</h2>
+                    <p>I specialize in crafting stunning websites that not only look great but are also fully functional. By developing custom websites that reflect your brand identity and engage your target audience.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
@@ -145,10 +147,13 @@
                         <input type="text" name="Name" placeholder="Your Name" required >
                         <input type="email" name="email" placeholder="Your Email" required >
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
             </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Tebogo. Made by Tebogo Maduna</p>
         </div>
     </div>
 
