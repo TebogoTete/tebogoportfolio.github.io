@@ -4,6 +4,9 @@
     font-family: Helvetica, sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: black;
 }
@@ -311,6 +314,11 @@ form .btn2{
     color: #205cd4;
     font-weight: 300;
     margin-top: 20px; 
+}
+#msg{
+    color: green;
+    margin-top: -40px;
+    display: block;
 }
 /*------------------------css for small screen-------------------*/
 nav .fa-solid{
