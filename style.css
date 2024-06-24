@@ -60,6 +60,47 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+.wrapper{
+    position: relative;
+    text-align: left;
+    height: 1.2em;
+    margin-block: 10px 25px;
+}
+
+.wrapper .strong{
+    font-size: 25px;
+    position: absolute; 
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    font-weight: inherit;
+    display: flex;
+}
+.wrapper .space {padding: 0.1em;}
+
+.wrapper :is(.in, .out) {
+    opacity: 0;
+    transform: scaleY(0);
+}
+.wrapper .active .out {
+    opacity: 1;
+    transform: scaleY(1);
+    animation: textWave 0.2s ease reverse forwards;
+}
+.wrapper .in {animation: textWave 0.2s ease forwards;}
+
+@keyframes textWave {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
 .header-text{
     margin-top: 20%;
     font-size: 30px;
